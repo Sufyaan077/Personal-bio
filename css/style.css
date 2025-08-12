@@ -95,7 +95,7 @@ nav .right a span{
     border: 2px solid var(--text-color);
 }
 .hero-section .headshot img{
-    border-radius: 8%;
+    border-radius: 50%;
     width: 500px;
 }
 .hero-section .headshot img {
@@ -138,4 +138,7 @@ nav .right a span{
 /* SECTION 1 : HERO */
 .hero-section {
     padding: 0 20px;
+}
+.hero-section .text h2 {
+    font-size: 30px;
 }
