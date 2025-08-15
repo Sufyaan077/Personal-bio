@@ -2,53 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="css/style.css ">
-     
+    <link rel="stylesheet" href="css/style.css">
     <title>Personal-bio</title>
 </head>
 <body>
-
-
-
-   
-    <!-- NAVBAR -->
     <nav>
         <div class="left">
-        <a href="/">Sufyaan Altaf</a>
+            <a href="/">Sufyaan Altaf</a>
         </div>
-
         <div class="right">
-        <a href="https://github.com/Sufyaan077?tab=repositories" target="_blank" rel="noopener noreferrer">
-             <i class="fa-brands fa-github"></i>
-            <span>Github</span>
-        </a>
-        
-        <a href="mailto:msufyaan_altaf@hotmail.com">
-             <i class="fa-solid fa-envelope"></i>
-            <span>Email</span>
-       
-        </a>
+            <a href="https://github.com/Sufyaan077?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="mailto:msufyaan_altaf@hotmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
         </div>
     </nav>
 
     <main>
-<!-- SECTION 1 Intro --> 
- <section class="hero-section">
-         <div class="text">
-         <h2> Hi, I'm Sufyaan👋</h2> 
-         <!-- Put your opening paragraph here -->
-          <p>An aspiring and motivated junior developer who pivoted from scientific study and customer 
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Sufyaan👋</h2>
+                <p>An aspiring and motivated junior developer who pivoted from scientific study and customer 
 service to technology after discovering a passion for code. Completed core modules in HTML, 
 CSS, Git, relational databases and DevOps, and built several responsive sites hosted on GitHub 
 Pages. Brings analytical thinking from biology, calm customer facing communication skills, and a 
@@ -56,143 +39,115 @@ habit of consistent GitHub commits. Recognised for rapid self-learning, organise
 clear documentation. Ready to add value and grow into a full stack engineer through an 
 apprenticeship</p>
 
-<div class="links">
-    <a href="#skills">
-        <i class="fa-solid fa-code"></i>
-         <span>Skills</span>
-    </a>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+            <div class="headshot">
+                <img src="img/image of sufyaan.png" alt="Cartoon picture of Sufyaan">
+            </div>
+        </section>
 
-    <a href="#testimony">
-        <i class="fa-solid fa-pen"></i>
-         <span>Testimony</span>
-    </a>
+        <section id="Skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                I love turning ideas into real, interactive experiences with HTML, CSS, JavaScript, and React. I’ve built projects that pair sleek, responsive layouts with dynamic features, showing both creativity and clean, maintainable code. By the time I apply, I’ll have completed projects across all four and be ready to hit the ground running—curious, fast-learning, and up for any challenge.
+            </div>
 
-    <a href="#contact">
-        <i class="fa-solid fa-envelope"></i>
-         <span>Contact</span>
-    </a>
+            <div class="cells">
+                <div class="cell">
+                    <img class="skill-icon" src="img/HTML.png" alt="html-logo">
+                    <span>HTML</span>
+                </div>
+                <div class="cell">
+                    <img class="skill-icon" src="img/CSS.png" alt="CSS-logo">
+                    <span>CSS</span>
+                </div>
+                <div class="cell">
+                    <img class="skill-icon" src="img/JS.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="cell">
+                    <img class="skill-icon" src="img/React.png" alt="React">
+                    <span>React</span>
+                </div>
+            </div>
 
+            <section id="projects" class="projects-section" aria-labelledby="projects-title">
+                <h2 id="projects-title">My Projects</h2>
+                <p class="projects-intro">
+                    Here are a few projects I’ve built, bringing together HTML, CSS, JavaScript, and React.
+                </p>
 
-</div>
-         </div>
-        <div class="headshot">
-            <img src="img/image of sufyaan.png" alt="Cartoon picture of Sufyaan">
-        </div>
-    
- </section>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <a class="project-link" href="https://sufyaan077.github.io/Shopping-list/" target="_blank" rel="noopener">
+                            <img class="project-thumb" src="img/Shopping-List.png" alt="Shopping List app preview">
+                            <h3 class="project-title">Shopping List</h3>
+                            <p class="project-desc">Built with HTML, CSS and JavaScript. LocalStorage keeps items saved, and the UI is responsive and accessible.</p>
+                        </a>
+                    </article>
 
+                    <article class="project-card">
+                        <a class="project-link" href="https://sufyaan077.github.io/Personal-bio/" target="_blank" rel="noopener">
+                            <img class="project-thumb" src="img/Personal-Bio.png" alt="Personal Bio website preview">
+                            <h3 class="project-title">Personal Bio</h3>
+                            <p class="project-desc">Portfolio site created with HTML and CSS, focused on clean layout, typography and mobile-first responsiveness.</p>
+                        </a>
+                    </article>
 
- <!-- SECTION 2 Skills --> 
- <section id="Skills" class="skills-section">
-<h2>Skills</h2>
-<div class="text">
-    I love turning ideas into real, interactive experiences with HTML, CSS, JavaScript, and React. I’ve built projects that pair sleek, responsive layouts with dynamic features, showing both creativity and clean, maintainable code. By the time I apply, I’ll have completed projects across all four and be ready to hit the ground running—curious, fast-learning, and up for any challenge.
-    </div>
+                    <article class="project-card">
+                        <a class="project-link" href="https://weather-app-mu-ten-80.vercel.app/" target="_blank" rel="noopener">
+                            <img class="project-thumb" src="img/Weather-App.png" alt="Weather App preview">
+                            <h3 class="project-title">Weather App</h3>
+                            <p class="project-desc">Built in React. Fetches live weather data from an API and displays it in a modern, responsive interface.</p>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </section>
 
-    <div class="cells">
-        <div class="cell">
-            <img class="skill-icon" src="img/HTML.png" alt="html-logo">
-            <span>HTML</span>
-        </div>
+        <section id="Testimony" class="testimony-section">
+            <h2>Testimony</h2>
+            <div class="group">
+                <div class="person-details">
+                    <img id="Testimony-image" src="img/Asif Zamir.jpg" alt="Asif Zamir">
+                    <p>Asif Zamir</p>
+                    <p>UX-Focused Power Platform Consultant | Canvas & Model-Driven Apps | ALM + Automation</p>
+                </div>
+                <div class="text">“Sufyaan contacted me on LinkedIn with a clear agenda and targeted questions. I offered high-level pointers and resources; he independently turned them into a structured plan and followed up with well-documented progress. Proactive, coachable, and reliable—exactly what you want in a junior developer.”
+                    <a href="https://www.linkedin.com/in/asifalizamir/?originalSubdomain=uk">LinkedIn</a>
+                </div>
+            </div>
+        </section>
 
-      <div class="cell">
-            <img class="skill-icon" src="img/CSS.png" alt="CSS-logo">
-            <span>CSS</span>
-        </div>
+        <section id="Contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="group">
+                <div class="text">I’m applying for junior developer apprenticeships and open to collaboration. Drop your email and a quick note in the form—I’ll reply promptly. Based in West Yorkshire; remote/hybrid welcome. Available to start soon; CV and code samples on request.</div>
 
-
-         <div class="cell">
-            <img class="skill-icon" src="img/JS.png" alt="JavaScript">
-            <span>JavaScript</span>
-        </div>
-
-
-        <div class="cell">
-            <img class="skill-icon" src="img/React.png" alt="React">
-            <span>React</span>
-        </div>
-        <!-- Projects -->
-         <div class="cell">
-            <img class="skill-icon" src="img/HTML.png" alt="html-logo">
-            <span>HTML</span>
-        </div>
-
-      <div class="cell">
-            <img class="skill-icon" src="img/CSS.png" alt="CSS-logo">
-            <span>CSS</span>
-        </div>
-
-
-         <div class="cell">
-            <img class="skill-icon" src="img/JS.png" alt="JavaScript">
-            <span>JavaScript</span>
-        </div>
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
- </section>
-
-
- <!-- SECTION 3 Testimony --> 
- <section id="Testimony" class="testimony-section">
-  <h2>Testimony</h2>
- 
-
-
- <div class="group">
-    <div class="person-details">
-        <img id="Testimony-image" src="img/Asif Zamir.jpg" alt="Asif Zamir">
-        <p>Asif Zamir</p>
-        <p>UX-Focused Power Platform Consultant | Canvas & Model-Driven Apps | ALM + Automation</p>
-    </div>
-
-    <div class="text">“Sufyaan contacted me on LinkedIn with a clear agenda and targeted questions. I offered high-level pointers and resources; he independently turned them into a structured plan and followed up with well-documented progress. Proactive, coachable, and reliable—exactly what you want in a junior developer.”
-    <a href="https://www.linkedin.com/in/asifalizamir/?originalSubdomain=uk">LinkedIn</a>
-    </div>
- </div>
- </section>
-
-
-
- <!-- SECTION 4 Contact --> 
- <section id="Contact" class="contact-section">
-<h2>Contact</h2>
-<div class="group">
-    <div class="text">I’m applying for junior developer apprenticeships and open to collaboration. Drop your email and a quick note in the form—I’ll reply promptly. Based in West Yorkshire; remote/hybrid welcome. Available to start soon; CV and code samples on request.
-
-
-    </div>
-
-
-    <form>
-        <label for="name">Name</label>
-        <input type="text" id="name">
-
-        <label for="email">Email</label>
-        <input type="email" id="email">
-
-        <label for="message">Message</label>
-        <textarea id="message"></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-</div>
-</section>
-
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
-    
 </body>
 </html>

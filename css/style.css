@@ -10,10 +10,8 @@
     box-sizing: border-box;
 }
 
-
 html{
 scroll-behavior: smooth;
-
 }
 
 body {
@@ -28,7 +26,6 @@ a{
     text-decoration: none;
 }
 
-/* NAVBAR */
 nav{
 display: flex;
 justify-content: space-between;
@@ -58,7 +55,7 @@ nav .right a:last-child {
 nav .right a span{
     margin-left: 5px;
 }
-/* SECTION 1 : HERO */
+
 .hero-section{
     display: flex;
     justify-content: space-between;
@@ -81,9 +78,8 @@ nav .right a span{
 }
 .hero-section .text .links {
     margin-top: 25px;
-
 }
- .hero-section .text .links a {
+.hero-section .text .links a {
     display: inline-block;
     padding: 5px 10px;
     border: 2px solid var(--link-color);
@@ -103,9 +99,8 @@ nav .right a span{
 .hero-section .headshot img {
     width: 300px;
     margin-bottom: 100px;
-
 }
-/* SECTION 2: Skills */
+
 .skills-section{
     padding: 0 50px;
     margin-bottom: 100px;
@@ -113,18 +108,15 @@ nav .right a span{
 .skills-section h2 {
     text-align: center;
     font-size: 35px;
-
 }
 .skills-section .text {
     text-align: center;
     margin-bottom: 20px;
-
 }
 .skills-section .cells {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-   
 }
 .skills-section .cells .cell {
     display: flex;
@@ -136,18 +128,15 @@ nav .right a span{
     margin: 10px ;
     border: 1.5px solid #d3d3d3;
     border-radius: 5px;
-    
 }
 .skills-section .cells .cell span{
     font-size: 18px;
-
 }
 .skills-section .cells .cell .img {
-    width: 30px; 
-    height: 30px; 
+    width: 30px;
+    height: 30px;
     object-fit: contain;
-    border-radius: 2px; 
-    
+    border-radius: 2px;
 }
 
 #Skills img.skill-icon{
@@ -173,15 +162,105 @@ nav .right a span{
   border:1.5px solid #d3d3d3;
   border-radius:8px;
 }
-    /* SECTION 3 : Testimony */
-    .testimony-section {
+
+.projects-section {
+  padding: 64px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.projects-section h2 {
+  font-size: clamp(24px, 4vw, 36px);
+  margin: 0 auto 12px;
+  position: relative;
+  display: inline-block;
+}
+.projects-section h2::after {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 3px;
+  background: var(--link-color);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+.projects-intro {
+  color: #6b7280;
+  margin: 0 auto 28px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+
+.project-card {
+  grid-column: span 4;
+  background: #0f172a;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+@media (max-width: 900px) { .project-card { grid-column: span 6; } }
+@media (max-width: 560px) { .project-card { grid-column: span 12; } }
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.project-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 15;
+  object-fit: cover;
+  background: #111827;
+}
+
+.project-title {
+  font-size: 18px;
+  margin: 12px 14px 6px;
+  color: white;
+}
+.project-desc {
+  font-size: 14.5px;
+  color: #d1d5db;
+  padding: 0 14px 14px;
+  line-height: 1.5;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-3px);
+  border-color: rgba(99,102,241,0.6);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.project-link:focus {
+  outline: none;
+}
+.project-link:focus-visible .project-title {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.project-card:hover .project-thumb {
+  transform: scale(1.02);
+  transition: transform .25s ease;
+}
+
+.testimony-section {
      padding: 0 50px;
      margin-bottom: 100px;
 }
-    .testimony-section h2 {
-        font-size: 35px;
-        margin-bottom: 30px;
-
+.testimony-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
 }
 .testimony-section .group {
     display: flex;
@@ -197,49 +276,40 @@ nav .right a span{
 }
 .testimony-section .group .person-details p {
     font-weight: 600;
-
 }
 .testimony-section .group .person-details p:last-child {
     font-weight: normal;
-
 }
 #Testimony-image {
- aspect-ratio: 1 / 1; 
- width: 200px;  
+ aspect-ratio: 1 / 1;
+ width: 200px;
  object-fit: cover;
  border-radius: 50%;
  margin-bottom: 10px;
-
 }
 
-   /* SECTION 4: Contact */
-     .contact-section {
+.contact-section {
         padding: 0 50px;
         margin-bottom: 100px;
-
 }
-     .contact-section h2 {
+.contact-section h2 {
         font-size: 35px;
-     }
-
-     .contact-section .group {
+}
+.contact-section .group {
         display: flex;
         gap: 50px;
-     }
-
-     .contact-section .group .text {
+}
+.contact-section .group .text {
         flex: 3;
         margin-top: 20px;
-     }
-
-     .contact-section .group form {
+}
+.contact-section .group form {
         flex: 3;
         display: flex;
         flex-direction: column;
-     }
-     
-     .contact-section .group form input,
-     .contact-section .group form textarea {
+}
+.contact-section .group form input,
+.contact-section .group form textarea {
         font-family: 'Poppins', sans-serif;
         border: 2px solid var(--link-color);
         background-color: transparent;
@@ -247,8 +317,8 @@ nav .right a span{
         margin-bottom: 15px;
         outline: none;
         resize: none;
-     }
-     .contact-section .group form button {
+}
+.contact-section .group form button {
         font-size: 16px;
          font-family: 'Poppins', sans-serif;
          color: white;
@@ -257,86 +327,61 @@ nav .right a span{
          height: 50px;
          cursor: pointer;
          transition: .1s;
-     }
-     
-     .contact-section .group form button:hover {
+}
+.contact-section .group form button:hover {
         filter: brightness(.9);
-     }
-
+}
 
 @media (max-width:850px){
-    /* SECTION 1: HERO */
     .hero-section {
         flex-direction: column-reverse;
-    } }
-    
-    @media (max-width:740px){
-    /* SECTION 1: HERO */
+    }
+}
+@media (max-width:740px){
     .hero-section .text h2 {
         font-size: 35px;
-    } 
-    /* SECTION 3 : Testimony */
+    }
     .testimony-section{
     text-align: center;
     }
     .testimony-section .group {
         flex-direction: column;
-
     }
-
-    /* SECTION 4 : Contact */
     .contact-section .group {
         flex-direction: column;
     }
-
 }
 @media (max-width:600px){
-    /* NAVBAR */
 nav{
     padding: 0% 20px;
 }
-
 nav .right a{
 font-size: 22px;
 }
-
 nav .right a:last-child {
     color: var(--text-color);
     background-color: transparent;
     padding: 0;
 }
-
 nav .right a span{
     display: none;
 }
-
-/* SECTION 1 : HERO */
 .hero-section {
     padding: 0 20px;
 }
 .hero-section .text h2 {
     font-size: 30px;
 }
-/* SECTION 2: Skills */
- .skills-section {
+.skills-section {
     padding: 0 20px;
- }
- .skills-section .cells .cell span {
+}
+.skills-section .cells .cell span {
     font-size: 16px;
- }
- /* SECTION 3: Testimony */
+}
 .testimony-section{
     padding: 0 20px;
 }
-/* SECTION 4:Contact */
 .contact-section{
     padding: 0 20px;
 }
-
-
-
-
-
-
 }
-
